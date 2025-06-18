@@ -19,7 +19,7 @@ The video of this demo can be found at:
 https://youtu.be/pRvfpCx3qm0
 
 ---------------------------------------------
-The demo is based on DX11 and was written by C++ in VS 2017, below Qt libs may be needed if you want to compile the source code:
+The demo is based on DX11 and was written by C++ in VS 2017, below Qt libs may be needed if you want to compile the source code.
 • qt-opensource-windows-x86-5.14.0.exe
 • qt-vsaddin-msvc2017-2.4.3.vsix
 
