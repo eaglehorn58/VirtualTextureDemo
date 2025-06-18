@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns:atg="http://atg.xbox.com" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{8e114980-c1a3-4ada-ad7c-83caadf5daeb}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{fa7ee6b4-533e-4f7b-b0bb-72dff9418807}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src">
+      <UniqueIdentifier>{2fb9ef8c-7677-43ff-a388-80da5b9caf87}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Src\DirectXTexCompressGPU.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\DirectXTexConvert.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\DirectXTexD3D11.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\DirectXTexDDS.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\DirectXTexFlipRotate.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\DirectXTexImage.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\DirectXTexMipmaps.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\DirectXTexMisc.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\DirectXTexNormalMaps.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\DirectXTexPMAlpha.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\DirectXTexResize.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\DirectXTexTGA.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\DirectXTexUtil.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\DirectXTexWIC.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\BC.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\BC4BC5.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\BC6HBC7.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\BCDirectCompute.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\DirectXTexCompress.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Include\BCDirectCompute.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\DDS.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\DirectXTex.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\DirectXTexP.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Filters.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\scoped.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\BC.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Include\DirectXTex.inl">
+      <Filter>Include</Filter>
+    </None>
+  </ItemGroup>
+</Project>

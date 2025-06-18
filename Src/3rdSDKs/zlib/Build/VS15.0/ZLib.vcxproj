@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Include\unzip.h" />
+    <ClInclude Include="..\..\Include\zconf.h" />
+    <ClInclude Include="..\..\Include\zip.h" />
+    <ClInclude Include="..\..\Include\zlib.h" />
+    <ClInclude Include="..\..\Src\crc32.h" />
+    <ClInclude Include="..\..\Src\deflate.h" />
+    <ClInclude Include="..\..\Src\gzguts.h" />
+    <ClInclude Include="..\..\Src\inffast.h" />
+    <ClInclude Include="..\..\Src\inffixed.h" />
+    <ClInclude Include="..\..\Src\inflate.h" />
+    <ClInclude Include="..\..\Src\inftrees.h" />
+    <ClInclude Include="..\..\Src\trees.h" />
+    <ClInclude Include="..\..\Src\zutil.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Src\adler32.c" />
+    <ClCompile Include="..\..\Src\compress.c" />
+    <ClCompile Include="..\..\Src\crc32.c" />
+    <ClCompile Include="..\..\Src\deflate.c" />
+    <ClCompile Include="..\..\Src\gzclose.c" />
+    <ClCompile Include="..\..\Src\gzlib.c" />
+    <ClCompile Include="..\..\Src\gzread.c" />
+    <ClCompile Include="..\..\Src\gzwrite.c" />
+    <ClCompile Include="..\..\Src\infback.c" />
+    <ClCompile Include="..\..\Src\inffast.c" />
+    <ClCompile Include="..\..\Src\inflate.c" />
+    <ClCompile Include="..\..\Src\inftrees.c" />
+    <ClCompile Include="..\..\Src\trees.c" />
+    <ClCompile Include="..\..\Src\uncompr.c" />
+    <ClCompile Include="..\..\Src\unzip.cpp" />
+    <ClCompile Include="..\..\Src\zip.cpp" />
+    <ClCompile Include="..\..\Src\zutil.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Src\zlib.def" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8FD826F8-3739-44E6-8CC8-997122E53B8D}</ProjectGuid>
+    <ProjectName>zlib</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30128.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\..\..\Output\VS$(VisualStudioVersion)\Output\3rdSDKs\ZLib\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\..\..\Output\VS$(VisualStudioVersion)\Intermediate\3rdSDKs\ZLib\$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\..\..\Output\VS$(VisualStudioVersion)\Output\3rdSDKs\ZLib\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\..\..\Output\VS$(VisualStudioVersion)\Intermediate\3rdSDKs\ZLib\$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</GenerateManifest>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ZLib_d</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ZLib</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>X64</TargetEnvironment>
+      <TypeLibraryName>$(OutDir)zlibvc.tlb</TypeLibraryName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\Src;..\..\Include;</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeaderOutputFile>$(IntDir)zlibvc.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(OutDir)</ProgramDataBaseFileName>
+      <BrowseInformation>
+      </BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x040c</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>..\..\..\..\..\..\Output\VS11.0\Intermediate\3rdSDK\zlib\x64\gvmat64.obj;..\..\..\..\..\..\Output\VS11.0\Intermediate\3rdSDK\zlib\x64\inffasx64.obj;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)zlibwapi.dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ModuleDefinitionFile>.\zlibvc.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)zlibwapi.pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>$(OutDir)zlibwapi.map</MapFileName>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)zlibwapi.lib</ImportLibrary>
+      <TargetMachine>MachineX64</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>xcopy "$(TargetPath)" ..\..\..\..\..\SDKs\3rdSDKs\Lib\VS$(VisualStudioVersion)\$(Platform)\ /Y /D /R /S
+del ..\..\..\..\..\SDKs\3rdSDKs\Include\ZLib\ /S /Q
+xcopy ..\..\Include\*.* ..\..\..\..\..\SDKs\3rdSDKs\Include\ZLib\ /Y /D /R /S</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>X64</TargetEnvironment>
+      <TypeLibraryName>$(OutDir)zlibvc.tlb</TypeLibraryName>
+    </Midl>
+    <ClCompile>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\..\Src;..\..\Include;</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeaderOutputFile>$(IntDir)zlibvc.pch</PrecompiledHeaderOutputFile>
+      <AssemblerOutput>NoListing</AssemblerOutput>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(OutDir)</ProgramDataBaseFileName>
+      <BrowseInformation>
+      </BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x040c</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>..\..\..\..\..\..\Output\VS11.0\Intermediate\3rdSDK\zlib\x64\gvmat64.obj;..\..\..\..\..\..\Output\VS11.0\Intermediate\3rdSDK\zlib\x64\inffasx64.obj;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)zlibwapi.dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <ModuleDefinitionFile>.\zlibvc.def</ModuleDefinitionFile>
+      <ProgramDatabaseFile>$(OutDir)zlibwapi.pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>$(OutDir)zlibwapi.map</MapFileName>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)zlibwapi.lib</ImportLibrary>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>xcopy "$(TargetPath)" ..\..\..\..\..\SDKs\3rdSDKs\Lib\VS$(VisualStudioVersion)\$(Platform)\ /Y /D /R /S
+del ..\..\..\..\..\SDKs\3rdSDKs\Include\ZLib\ /S /Q
+xcopy ..\..\Include\*.* ..\..\..\..\..\SDKs\3rdSDKs\Include\ZLib\ /Y /D /R /S</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

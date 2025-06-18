@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{041BBEE7-BE0C-4685-9A7D-9B7BB4FAD16D}</ProjectGuid>
+    <Keyword>QtVS_v302</Keyword>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>..\..\Output\VS$(VisualStudioVersion)\Output\VirtualTextureSample\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>..\..\Output\VS$(VisualStudioVersion)\Intermediate\VirtualTextureSample\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>..\..\Output\VS$(VisualStudioVersion)\Output\VirtualTextureSample\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>..\..\Output\VS$(VisualStudioVersion)\Intermediate\VirtualTextureSample\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <QtInstall>msvc2017_64</QtInstall>
+    <QtModules>core;gui;widgets</QtModules>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <QtInstall>msvc2017_64</QtInstall>
+    <QtModules>core;gui;widgets</QtModules>
+  </PropertyGroup>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AdditionalIncludeDirectories>$(Qt_INCLUDEPATH_);%(AdditionalIncludeDirectories);..\..\SDKs\3rdSDKs\Include\DirectXTex;..\..\SDKs\MiddleLibs\Include\A3D;..\..\SDKs\MiddleLibs\Include\ADX11</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(TargetName).exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d11.lib;d3dcompiler.lib;dxguid.lib;DirectXTex_d.lib;A3D_d.lib;ADX11_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(Qt_LIBPATH_);%(AdditionalLibraryDirectories);..\..\SDKs\3rdSDKs\Lib\VS$(VisualStudioVersion)\$(Platform);..\..\SDKs\MiddleLibs\Lib\VS$(VisualStudioVersion)\$(Platform)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy "$(TargetPath)" ..\..\Apps\VirtualTextureSample\ /Y /D /R /S
+xcopy .\Shaders\*.* ..\..\Apps\VirtualTextureSample\Shaders\ /Y /D /R /S
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat />
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AdditionalIncludeDirectories>$(Qt_INCLUDEPATH_);%(AdditionalIncludeDirectories);..\..\SDKs\3rdSDKs\Include\DirectXTex;..\..\SDKs\MiddleLibs\Include\A3D;..\..\SDKs\MiddleLibs\Include\ADX11</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(TargetName).exe</OutputFile>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies>d3d11.lib;d3dcompiler.lib;dxguid.lib;DirectXTex.lib;A3D.lib;ADX11.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(Qt_LIBPATH_);%(AdditionalLibraryDirectories);..\..\SDKs\3rdSDKs\Lib\VS$(VisualStudioVersion)\$(Platform);..\..\SDKs\MiddleLibs\Lib\VS$(VisualStudioVersion)\$(Platform)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy "$(TargetPath)" ..\..\Apps\VirtualTextureSample\ /Y /D /R /S
+xcopy .\Shaders\*.* ..\..\Apps\VirtualTextureSample\Shaders\ /Y /D /R /S
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="DlgGenVirtualTexture.cpp" />
+    <ClCompile Include="FormCamera.cpp" />
+    <ClCompile Include="FormContainer.cpp" />
+    <ClCompile Include="FormViewVPage.cpp" />
+    <ClCompile Include="GameScene.cpp" />
+    <ClCompile Include="Global.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MainDockWidget.cpp" />
+    <ClCompile Include="RenderWindow.cpp" />
+    <ClCompile Include="ScreenQuad.cpp" />
+    <ClCompile Include="TabPageWidget.cpp" />
+    <ClCompile Include="TestMesh.cpp" />
+    <ClCompile Include="VPageViewer.cpp" />
+    <ClCompile Include="VTextureAtlas.cpp" />
+    <ClCompile Include="VTextureAtlasMesh.cpp" />
+    <ClCompile Include="VTextureGenerator.cpp" />
+    <ClCompile Include="VTexturePageRequest.cpp" />
+    <ClCompile Include="VTextureStream.cpp" />
+    <ClCompile Include="VTextureSystem.cpp" />
+    <ClCompile Include="VTMainWindow.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="VTMainWindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="VirtualTextureSample.qrc" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="FormCamera.h" />
+    <QtMoc Include="FormBase.h" />
+    <QtMoc Include="FormContainer.h" />
+    <QtMoc Include="TabPageWidget.h" />
+    <QtMoc Include="MainDockWidget.h" />
+    <QtMoc Include="RenderWindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="ui\FormCamera.ui" />
+    <QtUic Include="ui\FormViewVPage.ui" />
+    <QtUic Include="ui\GenVirtualTexture.ui" />
+    <QtUic Include="ui\VTMainWindow.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="VTextureAtlas.h" />
+    <ClInclude Include="VTextureAtlasMesh.h" />
+    <ClInclude Include="VTextureGenerator.h" />
+    <ClInclude Include="VTexturePageRequest.h" />
+    <ClInclude Include="VTextureStream.h" />
+    <ClInclude Include="VTextureSystem.h" />
+    <ClInclude Include="VTextureTypes.h" />
+    <QtMoc Include="FormViewVPage.h" />
+    <ClInclude Include="GameScene.h" />
+    <ClInclude Include="ScreenQuad.h" />
+    <ClInclude Include="VPageViewer.h" />
+    <QtMoc Include="DlgGenVirtualTexture.h" />
+    <ClInclude Include="Global.h" />
+    <ClInclude Include="TestMesh.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders\MeshDefault_ps.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="Shaders\MeshDefault_vs.hlsl">
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders\MeshVT_ps.hlsl">
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders\ScreenQuad_ps.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="Shaders\ScreenQuad_vs.hlsl">
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders\VTextureAtlas_ps.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="Shaders\VTextureAtlas_vs.hlsl">
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders\GenBorderedVT_cs.hlsl">
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

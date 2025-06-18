@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Include\jchuff.h" />
+    <ClInclude Include="..\..\Include\jconfig.h" />
+    <ClInclude Include="..\..\Include\jdct.h" />
+    <ClInclude Include="..\..\Include\jdhuff.h" />
+    <ClInclude Include="..\..\Include\jerror.h" />
+    <ClInclude Include="..\..\Include\jinclude.h" />
+    <ClInclude Include="..\..\Include\jmemsys.h" />
+    <ClInclude Include="..\..\Include\jmorecfg.h" />
+    <ClInclude Include="..\..\Include\jpegint.h" />
+    <ClInclude Include="..\..\Include\jpeglib.h" />
+    <ClInclude Include="..\..\Include\jversion.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Src\jcapimin.c" />
+    <ClCompile Include="..\..\Src\jcapistd.c" />
+    <ClCompile Include="..\..\Src\jccoefct.c" />
+    <ClCompile Include="..\..\Src\jccolor.c" />
+    <ClCompile Include="..\..\Src\jcdctmgr.c" />
+    <ClCompile Include="..\..\Src\jchuff.c" />
+    <ClCompile Include="..\..\Src\jcinit.c" />
+    <ClCompile Include="..\..\Src\jcmainct.c" />
+    <ClCompile Include="..\..\Src\jcmarker.c" />
+    <ClCompile Include="..\..\Src\jcmaster.c" />
+    <ClCompile Include="..\..\Src\jcomapi.c" />
+    <ClCompile Include="..\..\Src\jcparam.c" />
+    <ClCompile Include="..\..\Src\jcphuff.c" />
+    <ClCompile Include="..\..\Src\jcprepct.c" />
+    <ClCompile Include="..\..\Src\jcsample.c" />
+    <ClCompile Include="..\..\Src\jctrans.c" />
+    <ClCompile Include="..\..\Src\jdapimin.c" />
+    <ClCompile Include="..\..\Src\jdapistd.c" />
+    <ClCompile Include="..\..\Src\jdatadst.c" />
+    <ClCompile Include="..\..\Src\jdatasrc.c" />
+    <ClCompile Include="..\..\Src\jdcoefct.c" />
+    <ClCompile Include="..\..\Src\jdcolor.c" />
+    <ClCompile Include="..\..\Src\jddctmgr.c" />
+    <ClCompile Include="..\..\Src\jdhuff.c" />
+    <ClCompile Include="..\..\Src\jdinput.c" />
+    <ClCompile Include="..\..\Src\jdmainct.c" />
+    <ClCompile Include="..\..\Src\jdmarker.c" />
+    <ClCompile Include="..\..\Src\jdmaster.c" />
+    <ClCompile Include="..\..\Src\jdmerge.c" />
+    <ClCompile Include="..\..\Src\jdphuff.c" />
+    <ClCompile Include="..\..\Src\jdpostct.c" />
+    <ClCompile Include="..\..\Src\jdsample.c" />
+    <ClCompile Include="..\..\Src\jdtrans.c" />
+    <ClCompile Include="..\..\Src\jerror.c" />
+    <ClCompile Include="..\..\Src\jfdctflt.c" />
+    <ClCompile Include="..\..\Src\jfdctfst.c" />
+    <ClCompile Include="..\..\Src\jfdctint.c" />
+    <ClCompile Include="..\..\Src\jidctflt.c" />
+    <ClCompile Include="..\..\Src\jidctfst.c" />
+    <ClCompile Include="..\..\Src\jidctint.c" />
+    <ClCompile Include="..\..\Src\jidctred.c" />
+    <ClCompile Include="..\..\Src\jmemmgr.c" />
+    <ClCompile Include="..\..\Src\jmemnobs.c" />
+    <ClCompile Include="..\..\Src\jquant1.c" />
+    <ClCompile Include="..\..\Src\jquant2.c" />
+    <ClCompile Include="..\..\Src\jutils.c" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{417CB6BC-C327-4CA6-BA82-942237BA3FB9}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>jpeglib</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>..\..\..\..\..\Output\VS$(VisualStudioVersion)\Output\3rdSDKs\JpegLib\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>..\..\..\..\..\Output\VS$(VisualStudioVersion)\Intermediate\3rdSDKs\JpegLib\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>JpegLib_d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>..\..\..\..\..\Output\VS$(VisualStudioVersion)\Output\3rdSDKs\JpegLib\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>..\..\..\..\..\Output\VS$(VisualStudioVersion)\Intermediate\3rdSDKs\JpegLib\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>JpegLib</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\Src;..\..\Include;</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeaderOutputFile>$(IntDir)jpeglibvc.pch</PrecompiledHeaderOutputFile>
+      <ProgramDataBaseFileName>$(OutDir)</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy "$(TargetPath)" ..\..\..\..\..\SDKs\3rdSDKs\Lib\VS$(VisualStudioVersion)\$(Platform)\ /Y /D /R /S
+del ..\..\..\..\..\SDKs\3rdSDKs\Include\JpegLib\ /S /Q
+xcopy ..\..\Include\*.* ..\..\..\..\..\SDKs\3rdSDKs\Include\JpegLib\ /Y /D /R /S</Command>
+    </PostBuildEvent>
+    <Lib>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+    <Bscmake>
+      <SuppressStartupBanner>false</SuppressStartupBanner>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\Src;..\..\Include;</AdditionalIncludeDirectories>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeaderOutputFile>$(IntDir)jpeglib.pch</PrecompiledHeaderOutputFile>
+      <AssemblerOutput>NoListing</AssemblerOutput>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy "$(TargetPath)" ..\..\..\..\..\SDKs\3rdSDKs\Lib\VS$(VisualStudioVersion)\$(Platform)\ /Y /D /R /S
+del ..\..\..\..\..\SDKs\3rdSDKs\Include\JpegLib\ /S /Q
+xcopy ..\..\Include\*.* ..\..\..\..\..\SDKs\3rdSDKs\Include\JpegLib\ /Y /D /R /S</Command>
+    </PostBuildEvent>
+    <Lib>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+    <Bscmake>
+      <SuppressStartupBanner>false</SuppressStartupBanner>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

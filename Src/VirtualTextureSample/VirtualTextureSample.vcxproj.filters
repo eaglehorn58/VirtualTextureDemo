@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Main Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="UI Files">
+      <UniqueIdentifier>{eaec7739-c34c-4545-90ef-58efef9b5cd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{5743abb2-2605-47a8-a6ec-e1eb5d92541c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main Files\VTexture Files">
+      <UniqueIdentifier>{32d9ef0e-f691-4c08-9eb2-5a12c564b540}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Main Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VTMainWindow.cpp">
+      <Filter>Main Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderWindow.cpp">
+      <Filter>Main Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainDockWidget.cpp">
+      <Filter>UI Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TabPageWidget.cpp">
+      <Filter>UI Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FormContainer.cpp">
+      <Filter>UI Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FormCamera.cpp">
+      <Filter>UI Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Global.cpp">
+      <Filter>Main Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestMesh.cpp">
+      <Filter>Main Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgGenVirtualTexture.cpp">
+      <Filter>UI Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ScreenQuad.cpp">
+      <Filter>Main Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VPageViewer.cpp">
+      <Filter>Main Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FormViewVPage.cpp">
+      <Filter>UI Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameScene.cpp">
+      <Filter>Main Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VTextureStream.cpp">
+      <Filter>Main Files\VTexture Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VTexturePageRequest.cpp">
+      <Filter>Main Files\VTexture Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VTextureSystem.cpp">
+      <Filter>Main Files\VTexture Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VTextureAtlas.cpp">
+      <Filter>Main Files\VTexture Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VTextureAtlasMesh.cpp">
+      <Filter>Main Files\VTexture Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VTextureGenerator.cpp">
+      <Filter>Main Files\VTexture Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="VirtualTextureSample.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="VTMainWindow.h">
+      <Filter>Main Files</Filter>
+    </QtMoc>
+    <QtMoc Include="RenderWindow.h">
+      <Filter>Main Files</Filter>
+    </QtMoc>
+    <QtMoc Include="MainDockWidget.h">
+      <Filter>UI Files</Filter>
+    </QtMoc>
+    <QtMoc Include="TabPageWidget.h">
+      <Filter>UI Files</Filter>
+    </QtMoc>
+    <QtMoc Include="FormContainer.h">
+      <Filter>UI Files</Filter>
+    </QtMoc>
+    <QtMoc Include="FormBase.h">
+      <Filter>UI Files</Filter>
+    </QtMoc>
+    <QtMoc Include="FormCamera.h">
+      <Filter>UI Files</Filter>
+    </QtMoc>
+    <QtMoc Include="DlgGenVirtualTexture.h">
+      <Filter>UI Files</Filter>
+    </QtMoc>
+    <QtMoc Include="FormViewVPage.h">
+      <Filter>UI Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="ui\FormCamera.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="ui\VTMainWindow.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="ui\GenVirtualTexture.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="ui\FormViewVPage.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Global.h">
+      <Filter>Main Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TestMesh.h">
+      <Filter>Main Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ScreenQuad.h">
+      <Filter>Main Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VPageViewer.h">
+      <Filter>Main Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameScene.h">
+      <Filter>Main Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VTextureStream.h">
+      <Filter>Main Files\VTexture Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VTexturePageRequest.h">
+      <Filter>Main Files\VTexture Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VTextureSystem.h">
+      <Filter>Main Files\VTexture Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VTextureAtlas.h">
+      <Filter>Main Files\VTexture Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VTextureAtlasMesh.h">
+      <Filter>Main Files\VTexture Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VTextureTypes.h">
+      <Filter>Main Files\VTexture Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VTextureGenerator.h">
+      <Filter>Main Files\VTexture Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders\MeshDefault_ps.hlsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\MeshDefault_vs.hlsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\MeshVT_ps.hlsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\ScreenQuad_ps.hlsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\ScreenQuad_vs.hlsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\VTextureAtlas_vs.hlsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\VTextureAtlas_ps.hlsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\GenBorderedVT_cs.hlsl">
+      <Filter>Shaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>

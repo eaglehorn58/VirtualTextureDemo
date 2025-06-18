@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\Src\BC.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\BC4BC5.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\BC6HBC7.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\BCDirectCompute.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\DirectXTexCompress.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\DirectXTexCompressGPU.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\DirectXTexConvert.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\DirectXTexD3D11.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\DirectXTexDDS.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\DirectXTexFlipRotate.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\DirectXTexImage.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\DirectXTexMipmaps.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\DirectXTexMisc.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\DirectXTexNormalMaps.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\DirectXTexPMAlpha.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\DirectXTexResize.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\DirectXTexTGA.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\DirectXTexUtil.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\DirectXTexWIC.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\ScreenGrab.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\DirectXTexHDR.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Include\BC.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\DDS.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\DirectXTex.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\DirectXTexP.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Filters.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\scoped.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\BCDirectCompute.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\ScreenGrab.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Include\DirectXTex.inl">
+      <Filter>Include</Filter>
+    </None>
+    <None Include="..\..\Shaders\Compiled\BC6HEncode_EncodeBlockCS.inc">
+      <Filter>Shaders\Compiled</Filter>
+    </None>
+    <None Include="..\..\Shaders\Compiled\BC6HEncode_TryModeG10CS.inc">
+      <Filter>Shaders\Compiled</Filter>
+    </None>
+    <None Include="..\..\Shaders\Compiled\BC6HEncode_TryModeLE10CS.inc">
+      <Filter>Shaders\Compiled</Filter>
+    </None>
+    <None Include="..\..\Shaders\Compiled\BC7Encode_EncodeBlockCS.inc">
+      <Filter>Shaders\Compiled</Filter>
+    </None>
+    <None Include="..\..\Shaders\Compiled\BC7Encode_TryMode02CS.inc">
+      <Filter>Shaders\Compiled</Filter>
+    </None>
+    <None Include="..\..\Shaders\Compiled\BC7Encode_TryMode137CS.inc">
+      <Filter>Shaders\Compiled</Filter>
+    </None>
+    <None Include="..\..\Shaders\Compiled\BC7Encode_TryMode456CS.inc">
+      <Filter>Shaders\Compiled</Filter>
+    </None>
+    <None Include="..\..\Shaders\BC6HEncode.hlsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\Shaders\BC7Encode.hlsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\Shaders\CompileShaders.cmd">
+      <Filter>Shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Include">
+      <UniqueIdentifier>{083bbf15-5370-4ef2-9832-500a33d11d38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{2869289c-d29a-4d61-9bf3-5c6157e3fb4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Compiled">
+      <UniqueIdentifier>{00cb15aa-32df-4c46-87f5-6eb137525ef0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src">
+      <UniqueIdentifier>{72efc321-a39c-408d-a694-26350a27602a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
