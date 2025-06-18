@@ -20,9 +20,10 @@ https://youtu.be/pRvfpCx3qm0
 
 ---------------------------------------------
 The demo is based on DX11 and was written by C++ in VS 2017, below Qt libs may be needed if you want to compile the source code:
-qt-opensource-windows-x86-5.14.0.exe
-qt-vsaddin-msvc2017-2.4.3.vsix
+• qt-opensource-windows-x86-5.14.0.exe
+• qt-vsaddin-msvc2017-2.4.3.vsix
 
+---------------------------------------------
 • The demo implements virtual texture in the style of Mega Texture, it doesn’t procedurally generate virtual texture pages at runtime.
 
 • The conversion of mesh UV from individual texture space to virtual texture space is done when meshes are being loaded, by simply adding the offsets in the virtual texture to the original UVs.
